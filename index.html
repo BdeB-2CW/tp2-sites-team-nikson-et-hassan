@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Bonjour le monde! Bonjour les amis </h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP2-WEB-H20</title>
+
+    <link
+      href="http://localhost:8080/ords/tp2/client/"
+      rel="stylesheet"
+    />
+    <link href="client.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+      <h1 class="JF">Client</h1>
+      <h1 id="titre2">de la base de données</h1>
+      <h2 class="HN">H&N Gym</h2>
+      <label for = "nom">Nom du client</label>
+      <input type = "text" id = "nom" name ="nom" required minlength="4" maxlength="40" size="40"/>
+      <input id="clickMe" type ="button" value="Rechercher" onclick ="rech_client();"/>
+      <span id="affichage">
+        <ul id="clients"></ul>
+      </span>
+    </div>
+
+    <div id="insert">
+      <h2>Insertion des Clients</h2>
+      <label for="id_client">No du client (4 a 10 caractères):</label>
+      <input
+        type="text"
+        id="id_client"
+        name="id_client"
+        required
+        minlength="4"
+        maxlength="8"
+        size="10"
+      />
+      <label for="nom">Nom du client (5 a 20 caractères):</label>
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        required
+        minlength="2"
+        maxlength="20"
+        size="10"
+      />
+      <label for="prenom">Prenom du client (5 a 20 caractères):</label>
+      <input
+        type="text"
+        id="prenom"
+        name="prenom"
+        required
+        minlength="2"
+        maxlength="20"
+        size="10"
+      />
+
+      <input id="clickMe" type="button" value="Insérer" onclick="ins_client();" />
+    </div>
+    <script src="client.js"></script>
+    <script src="ins_client2.js"></script>
+  </body>
 </html>

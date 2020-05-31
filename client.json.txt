@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id_client": 5001,
+      "nom": "Accilien",
+      "prenom": "Johnny",
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://localhost:8080/ords/tp2/client/"
+        }
+      ]
+    },
+    
+    { "rel": "self", "href": "http://localhost:8080/ords/tp2/client/" },
+    { "rel": "edit", "href": "http://localhost:8080/ords/tp2/client/" },
+    {
+      "rel": "describedby",
+      "href": "http://localhost:8080/ords/tp2/client/"
+    },
+    { "rel": "first", "href": "http://localhost:8080/ords/tp2/client/" }
+  ]
+}
